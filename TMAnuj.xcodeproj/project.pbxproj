@@ -14,6 +14,9 @@
 		A29B2EF61AC672DF009A4D44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29B2EF41AC672DF009A4D44 /* LaunchScreen.xib */; };
 		A29B2F021AC672DF009A4D44 /* TMAnujTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B2F011AC672DF009A4D44 /* TMAnujTests.swift */; };
 		A29B2F0C1AC67340009A4D44 /* beaverStadiumPNG.png in Resources */ = {isa = PBXBuildFile; fileRef = A29B2F0B1AC67340009A4D44 /* beaverStadiumPNG.png */; };
+		A29B2F111AC6941F009A4D44 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29B2F0E1AC6941F009A4D44 /* FBSDKCoreKit.framework */; };
+		A29B2F121AC6941F009A4D44 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29B2F0F1AC6941F009A4D44 /* FBSDKLoginKit.framework */; };
+		A29B2F131AC6941F009A4D44 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29B2F101AC6941F009A4D44 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,10 @@
 		A29B2F001AC672DF009A4D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A29B2F011AC672DF009A4D44 /* TMAnujTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMAnujTests.swift; sourceTree = "<group>"; };
 		A29B2F0B1AC67340009A4D44 /* beaverStadiumPNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beaverStadiumPNG.png; sourceTree = "<group>"; };
+		A29B2F0E1AC6941F009A4D44 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A29B2F0F1AC6941F009A4D44 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A29B2F101AC6941F009A4D44 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A29B2F151AC694CE009A4D44 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29B2F121AC6941F009A4D44 /* FBSDKLoginKit.framework in Frameworks */,
+				A29B2F111AC6941F009A4D44 /* FBSDKCoreKit.framework in Frameworks */,
+				A29B2F131AC6941F009A4D44 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,8 @@
 		A29B2EE81AC672DF009A4D44 /* TMAnuj */ = {
 			isa = PBXGroup;
 			children = (
+				A29B2F151AC694CE009A4D44 /* Bridging-Header.h */,
+				A29B2F141AC6942B009A4D44 /* Frameworks */,
 				A29B2F0D1AC67349009A4D44 /* images */,
 				A29B2EEB1AC672DF009A4D44 /* AppDelegate.swift */,
 				A29B2EED1AC672DF009A4D44 /* ViewController.swift */,
@@ -121,6 +133,17 @@
 				A29B2F0B1AC67340009A4D44 /* beaverStadiumPNG.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		A29B2F141AC6942B009A4D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A29B2F0E1AC6941F009A4D44 /* FBSDKCoreKit.framework */,
+				A29B2F0F1AC6941F009A4D44 /* FBSDKLoginKit.framework */,
+				A29B2F101AC6941F009A4D44 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,9 +371,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TMAnuj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -358,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TMAnuj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
