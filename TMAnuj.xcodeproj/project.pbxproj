@@ -13,6 +13,7 @@
 		A29B2EF31AC672DF009A4D44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29B2EF21AC672DF009A4D44 /* Images.xcassets */; };
 		A29B2EF61AC672DF009A4D44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29B2EF41AC672DF009A4D44 /* LaunchScreen.xib */; };
 		A29B2F021AC672DF009A4D44 /* TMAnujTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B2F011AC672DF009A4D44 /* TMAnujTests.swift */; };
+		A29B2F0C1AC67340009A4D44 /* beaverStadiumPNG.png in Resources */ = {isa = PBXBuildFile; fileRef = A29B2F0B1AC67340009A4D44 /* beaverStadiumPNG.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A29B2EFB1AC672DF009A4D44 /* TMAnujTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMAnujTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29B2F001AC672DF009A4D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A29B2F011AC672DF009A4D44 /* TMAnujTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMAnujTests.swift; sourceTree = "<group>"; };
+		A29B2F0B1AC67340009A4D44 /* beaverStadiumPNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beaverStadiumPNG.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		A29B2EE81AC672DF009A4D44 /* TMAnuj */ = {
 			isa = PBXGroup;
 			children = (
+				A29B2F0D1AC67349009A4D44 /* images */,
 				A29B2EEB1AC672DF009A4D44 /* AppDelegate.swift */,
 				A29B2EED1AC672DF009A4D44 /* ViewController.swift */,
 				A29B2EEF1AC672DF009A4D44 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				A29B2F001AC672DF009A4D44 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A29B2F0D1AC67349009A4D44 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A29B2F0B1AC67340009A4D44 /* beaverStadiumPNG.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29B2F0C1AC67340009A4D44 /* beaverStadiumPNG.png in Resources */,
 				A29B2EF11AC672DF009A4D44 /* Main.storyboard in Resources */,
 				A29B2EF61AC672DF009A4D44 /* LaunchScreen.xib in Resources */,
 				A29B2EF31AC672DF009A4D44 /* Images.xcassets in Resources */,
